@@ -1,0 +1,77 @@
+body{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    /*width: calc(100%*3/5);*/
+    margin: auto;   
+    border: thick solid;
+    border-color: rgb(255, 0, 0, 1); 
+}
+article{
+    /*width: 250px;
+    height: 150px;*/
+    margin: auto;
+}
+aside {
+    /*width: 30%;
+    padding: .5rem;
+    margin: .5rem;
+    float: right;*/
+    margin: auto;    
+}
+main{
+    background-color: rgb(80, 74, 67);
+}
+#art1{
+    color: gold;
+}
+#art2{    
+    color: rgb(255, 166, 0);
+}
+.justified_indented{
+    text-align: justify;
+    text-indent: 15px;
+}
+.text_aside{
+    font-style: italic;
+    font-size: 12px;
+}
+.centered{
+    text-align: center;    
+}
+.border_thin{
+    border: thin solid;
+}
+.border_thick{
+    border: thick solid;
+    border-color: rgb(255, 0, 0, 1);
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-rows: auto;
+    border: thin dotted;
+}
+.one{
+    grid-column: 1;
+  grid-row: 1;
+}
+.two{
+    grid-column: 2-3;
+  grid-row: 1;
+}
+.three{
+    grid-column: 3-4;
+  grid-row: 1;
+}
+.four{
+    grid-column: 4;
+  grid-row: 1;
+}
+.five{
+    grid-column: 5;
+  grid-row: 1;
+}
+
