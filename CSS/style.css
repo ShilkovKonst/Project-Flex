@@ -47,31 +47,42 @@ main{
     border: thick solid;
     border-color: rgb(255, 0, 0, 1);
 }
-.wrapper{
+/*.wrapper{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr ;
     border: thin dotted;
 }
 .one{
-    grid-column: 1;
-  grid-row: 1;
+    grid-row: 1;
+    grid-column: 1;  
 }
 .two{
-    grid-column: 2-3;
-  grid-row: 1;
+    grid-row: 1;
+    grid-column: 2;  
 }
 .three{
-    grid-column: 3-4;
-  grid-row: 1;
+    grid-row: 1;
+    grid-column: 3;  
 }
 .four{
-    grid-column: 4;
-  grid-row: 1;
+    grid-row: 2;
+    grid-column: 2;  
 }
 .five{
-    grid-column: 5;
-  grid-row: 1;
+    grid-row: 2;
+    grid-column: 3;  
+}*/
+.box1{
+    display: flex;
 }
-
+.box2{
+    display: flex;
+}
+.box3{
+    display: flex;
+}
+.box4{
+    display: flex;
+}
