@@ -4,65 +4,92 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     width: calc(100%*3/5);
-    min-width: 500px;
+    min-width: 600px;
     padding: 0 5%;
     margin: 0 auto; 
-    border-color: rgb(255, 0, 0, 1); 
 }
 a{
     color: aqua;
 }
-article{
+nav, #name_border, aside, #inner_container{
+    border: double thin grey;
+}
+.justify_space_between{
+    justify-content: space-between;
+}
+#name_slogan{
     width: auto;
-    min-width: 10%;
-    height: 250px;
-    padding: 5%;
+}
+#site_name{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0;
+    padding: 3% auto;
+}
+#slogan{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
+h2{
+    height: auto;
+    padding: 5% auto;
     margin: 2%;
-    overflow-y: scroll;
+}
+img{
+    width: 150px;
+    height: 150px;
+}
+.centered{
+    text-align: center; 
+}
+article{
+    width: 99%;
+    min-width: 10%;
+    padding: 0 5% 5% 5%;
+    margin: 0 auto;
+}
+.justified_indented{
+    text-align: justify;
+    text-indent: 15px;
 }
 aside {
     color: rgb(225, 188, 65);
-    width: 15%;
-    height: 90%;
     padding: 1%; 
-    border: thin dotted;
+    margin: 0 auto;
+    flex-shrink: 1;
 }
 section{
-    width: 80%;
-    height: auto;
-    margin: auto;
-}
-h2{
-    height: 25px;
-    padding: 2% 1% 0;
-    margin: auto;
+    width: 99%;
+    margin: 0 auto;
 }
 iframe{
-    width: 500px;
-    height: 300px;
+    width: auto;
+    height: auto;
+}
+#video{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1% 0;
+    margin: 0;
 }
 .box_outer{
     display: flex;
-    flex: auto;
-    justify-content: center;
 }
-.box{
+.box_hor{
     display: flex;
 }
-.justify_space_evenly{
-    justify-content: space-evenly;
-}
-.justify_stretch{
-    justify-content: right;
-}
-main, header, footer{
-    background-color: rgb(80, 74, 67);
-    padding: 0 0 1%;
-    border: thin double;
+.box_vert{
+    display: flex;
+    flex-direction: column; 
 }
 footer>p, header>nav>p{
     padding: 1%;
     margin: 2%;
+    font-size: 16px;
 }
 #art1{
     color: gold;
@@ -71,7 +98,6 @@ footer>p, header>nav>p{
     color: goldenrod;
 }
 #aside_left{
-
     text-align: right;
     margin-right: 0;
 }
@@ -79,21 +105,14 @@ footer>p, header>nav>p{
     text-align: left;
     margin-left: 0;
 }
-#video{
-    justify-content: center;
-    margin: 0;
-}
-.justified_indented{
-    text-align: justify;
-    text-indent: 15px;
-}
 .text_aside{    
     font-style: italic;
     font-size: 11px;    
 }
-.centered{
-    text-align: center;    
+main, header, footer{
+    background-color: rgb(80, 74, 67);
+    border: thin double grey;
 }
-.border_thin{
-    border: thin solid;
+.justify_space_evenly{
+    justify-content: space-evenly;
 }
