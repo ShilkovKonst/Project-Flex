@@ -1,9 +1,9 @@
 body{
     background-color: rgba(0, 0, 0, 0.8);
-    color: white;
+    color: gold;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
-    width: calc(100%*3/5);
+    /*width: calc(100%*3/5);*/
     min-width: 600px;
     padding: 0 5%;
     margin: 0 auto; 
@@ -39,9 +39,9 @@ h2{
     padding: 5% auto;
     margin: 2%;
 }
-img{
-    width: 150px;
+img{    
     height: 150px;
+    width: 150px;
 }
 .centered{
     text-align: center; 
@@ -57,7 +57,6 @@ article{
     text-indent: 15px;
 }
 aside {
-    color: rgb(225, 188, 65);
     padding: 1%; 
     margin: 0 auto;
     flex-shrink: 1;
@@ -67,17 +66,18 @@ section{
     margin: 0 auto;
 }
 iframe{
-    width: auto;
+    width: 30%;
     height: auto;
+    aspect-ratio: 16/9;
+}
+#in_article_video{
+    width: auto;
 }
 #video{
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 1% 0;
     margin: 0;
-}
-.box_outer{
-    display: flex;
 }
 .box_hor{
     display: flex;
@@ -90,12 +90,6 @@ footer>p, header>nav>p{
     padding: 1%;
     margin: 2%;
     font-size: 16px;
-}
-#art1{
-    color: gold;
-}
-#art2{    
-    color: goldenrod;
 }
 #aside_left{
     text-align: right;
