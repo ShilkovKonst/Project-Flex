@@ -1,19 +1,17 @@
 body{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.10);
     color: gold;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
-    /*width: calc(100%*3/5);*/
     min-width: 600px;
+    
     padding: 0;
     margin: 0 auto; 
 }
 a{
     color: aqua;
 }
-nav, #name_border, aside, #inner_container{
-    border: double thin grey;
-}
+
 .justify_space_between{
     justify-content: space-between;
 }
@@ -58,16 +56,17 @@ article{
 }
 aside {
     padding: 1%; 
-    margin: 0 auto;
     flex-shrink: 1;
     width: 15%;
+    background-color: rgba(0, 0, 0, 0.10);
 }
 main{
     width: 70%;
+    border: double thin rgba(128, 128, 128, 0);
+    border-radius: 25px;
 }
 section{
     width: 100%;
-    margin: 0 auto;
 }
 iframe{
     width: 30%;
@@ -79,9 +78,8 @@ iframe{
 }
 #video{
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 1% 0;
-    margin: 0;
+    padding: 0;
+    margin: 1.5% 0 0 0; 
 }
 .box_hor{
     display: flex;
@@ -91,26 +89,51 @@ iframe{
     flex-direction: column; 
 }
 footer>p, header>nav>p{
-    padding: 1%;
-    margin: 2%;
+    padding: 0;
+    margin: 0.5%;
     font-size: 16px;
 }
 #aside_left{
     text-align: right;
     margin-right: 0;
+    background-image: url("../images/adventurer-baelins-route.jpg");
+    background-position: right;
+    background-attachment: fixed;
 }
 #aside_right{
     text-align: left;
     margin-left: 0;
+    background-image: url("../images/greg-baelins-route.jpg");
+    background-position: left;
+    background-attachment: fixed;
+}
+.justify_space_evenly{
+    justify-content: space-evenly;
 }
 .text_aside{    
     font-style: italic;
     font-size: 11px;    
 }
-main, header, footer{
-    background-color: rgb(80, 74, 67);
-    border: thin double grey;
+header, footer, article{
+    background-color: rgba(80, 74, 67, 0.5);    
+
 }
-.justify_space_evenly{
-    justify-content: space-evenly;
+header, footer, nav, #name_border, aside, article{
+    border: double thin grey;
+    border-radius: 25px;
+}
+nav, main, aside, article{
+    margin: 0.5%;
+}
+.main_bg_image{
+    background-image: url("../images/map_of_azerim1.jpg");
+    background-size: contain;
+    background-attachment: fixed;
+}
+.header_bg_image{
+    background-image: url("../images/Viva-La-Dirt-League.jpg");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
