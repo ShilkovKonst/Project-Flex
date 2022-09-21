@@ -1,45 +1,92 @@
 body{
     background-color: rgba(0, 0, 0, 0.10);
-    color: gold;
-    font-family: Arial, Helvetica, sans-serif;
+    color: #BF7130FF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 12px;
-    min-width: 600px;
-    
+    min-width: 600px;    
     padding: 0;
     margin: 0 auto; 
 }
-a{
-    color: aqua;
+header{
+    flex-wrap: wrap;
+    align-content: center;
 }
-
+header>div{
+    width: auto;
+}
+a{
+    color: rgba(0, 128, 0, 1);
+    font-size: 200%;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 .justify_space_between{
     justify-content: space-between;
 }
 #name_slogan{
+    max-width: 60%;
     width: auto;
+    min-width: 50%;
+}
+nav{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    padding: 1%;
+    max-width: 7.5%;
+    width: auto;  
+}
+ul{
+    display: flex;
+    width: auto;
+    margin: 0;
+    padding: 2%;
+    list-style-type: none;    
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content:space-evenly;    
+}
+li{
+    width: 30%;
+    min-width: 80px;
+}
+header>nav>ul>li>p{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 5%;
+    margin: auto;
+}
+#logo{
+    width:auto;
 }
 #site_name{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
     font-style: italic;
     font-weight: bold;
-    margin: 0;
-    padding: 3% auto;
+    margin: 1%;
+    padding:1%;
+    text-align: center;
+    border: solid thin transparent;
+    border-radius: 25px;
+    border: double thin rgba(0, 128, 0, 1);
+    max-width: 55%;
+    width: auto;
 }
-#slogan{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/*#slogan{
     font-size: 12px;
     font-style: italic;
     text-align: center;
-}
+}*/
 h2{
     height: auto;
     padding: 5% auto;
     margin: 2%;
-}
-img{    
-    height: 150px;
-    width: 150px;
 }
 .centered{
     text-align: center; 
@@ -58,7 +105,7 @@ aside {
     padding: 1%; 
     flex-shrink: 1;
     width: 15%;
-    background-color: rgba(0, 0, 0, 0.10);
+    background-color: rgba(0, 128, 0, 0.05);
 }
 main{
     width: 70%;
@@ -69,14 +116,17 @@ section{
     width: 100%;
 }
 iframe{
-    width: 30%;
+    min-width: 400px;
+    width: 30%;    
     height: auto;
     aspect-ratio: 16/9;
 }
 #in_article_video{
     width: auto;
+    min-width: auto;
 }
 #video{
+    min-width: 400px;
     flex-wrap: wrap;
     padding: 0;
     margin: 1.5% 0 0 0; 
@@ -88,24 +138,25 @@ iframe{
     display: flex;
     flex-direction: column; 
 }
-footer>p, header>nav>p{
-    padding: 0;
-    margin: 0.5%;
-    font-size: 16px;
+footer>p{
+    padding: 1%;
+    margin: 1% auto;  
+    width: auto;  
 }
+
 #aside_left{
     text-align: right;
     margin-right: 0;
-    background-image: url("../images/adventurer-baelins-route.jpg");
+    /*background-image: url("../images/adventurer-baelins-route.jpg");
     background-position: right;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
 }
 #aside_right{
     text-align: left;
     margin-left: 0;
-    background-image: url("../images/greg-baelins-route.jpg");
+    /*background-image: url("../images/greg-baelins-route.jpg");
     background-position: left;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
 }
 .justify_space_evenly{
     justify-content: space-evenly;
@@ -115,25 +166,35 @@ footer>p, header>nav>p{
     font-size: 11px;    
 }
 header, footer, article{
-    background-color: rgba(80, 74, 67, 0.5);    
+    background-color: rgba(0, 128, 0, 0.1);    
 
 }
-header, footer, nav, #name_border, aside, article{
-    border: double thin grey;
+nav, #name_border, aside, article{
+    border: double thin rgba(0, 128, 0, 1);
     border-radius: 25px;
+}
+header{
+    border: double thin rgba(0, 128, 0, 1);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+footer{
+    border: double thin rgba(0, 128, 0, 1);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 nav, main, aside, article{
     margin: 0.5%;
 }
-.main_bg_image{
+/*.main_bg_image{
     background-image: url("../images/map_of_azerim1.jpg");
     background-size: contain;
-    background-attachment: fixed;
-}
-.header_bg_image{
+    background-attachment: scroll;
+}*/
+/*.header_bg_image{
     background-image: url("../images/Viva-La-Dirt-League.jpg");
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
+}*/
